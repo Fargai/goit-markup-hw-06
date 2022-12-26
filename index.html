@@ -519,6 +519,30 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-footer-box">
+          <p class="subscribe-footer">Subscribe</p>
+          <form class="subscribe-form-footer">
+            <input
+              class="subscribe-input-footer"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe-btn-footer" type="submit">
+              <div class="subscribe-btn-fill">
+                <span class="subscribe-btn-text">Subscribe</span>
+                <svg
+                  aria-label="frame"
+                  class="frame-icon-footer"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#frame"></use>
+                </svg>
+              </div>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -528,6 +552,74 @@
             <use href="./images/icons.svg#close-black"></use>
           </svg>
         </button>
+        <p class="modal-page">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <div>
+            <label class="modal-label" for="name">Name</label>
+            <input
+              class="modal-input-name"
+              type="text"
+              name="user_name"
+              id="name"
+              required
+              pattern="[a-zA-Zа-яА-Я]+"
+            />
+            <svg class="" width="18" height="18">
+              <use href="./images/icons.svg#person-black"></use>
+            </svg>
+          </div>
+          <div>
+            <label class="modal-label" for="tel">Phone</label>
+            <input
+              class="modal-input-tel"
+              type="tel"
+              name="user_tel"
+              id="tel"
+              required
+              pattern="[0-9+]+"
+            />
+            <svg class="" width="18" height="18">
+              <use href="./images/icons.svg#phone-black"></use>
+            </svg>
+          </div>
+          <div>
+            <label class="modal-label" for="email">Email</label>
+            <input
+              class="modal-input-email"
+              type="email"
+              name="user_email"
+              id="email"
+              required
+            />
+            <svg class="" width="18" height="18">
+              <use href="./images/icons.svg#email-black"></use>
+            </svg>
+          </div>
+          <div>
+            <label class="modal-label-comment" for="comment">Comment</label>
+            <textarea
+              class="modal-input-comment"
+              name="user_comment"
+              id="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div>
+            <input
+              class="modal-input-policy"
+              type="checkbox"
+              name="user_policy"
+              id="policy"
+              required
+            />
+            <label class="modal-label-policy" for="policy"
+              >I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
